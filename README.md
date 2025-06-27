@@ -1,17 +1,17 @@
-# Goodreads SQL Project
+## Goodreads SQL Project
 
 This project explores a dataset of 11,000+ books from Goodreads using SQL. The goal is to analyze book popularity, author trends, and language patterns through a series of queries.
 
 ---
 
-## Tools
+### Tools
 SQLite (via DB Browser), Goodreads dataset (Kaggle), Windows, Markdown
 
-## SQL Features Used
+### SQL Features Used
 SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY, LIMIT, LIKE,
 Aggregate functions: COUNT(), SUM(), AVG()
 
-##Questions
+###Questions
 1. **Who are the top 10 most popular authors by total number of ratings received?**  
 2. **What are the top 10 highest-rated books that have received more than 1,000 ratings?**  
 3. **Which authors have written the most books in the dataset?**  
@@ -21,7 +21,7 @@ Aggregate functions: COUNT(), SUM(), AVG()
 
 
 
-## Query 1: Top Authors by Total Ratings
+### Query 1: Top Authors by Total Ratings
 
 **Question:**  
 Who are the top 10 most popular authors by total number of ratings received?
@@ -44,12 +44,12 @@ LIMIT 10;
 ```
 
 
-## Output
+### Output
 ![Query 1 Result](query1_result.png)
 
 
 
-## Query 2: Top-Rated Books (with 1,000+ Ratings)
+### Query 2: Top-Rated Books (with 1,000+ Ratings)
 
 **Question:**  
 What are the top 10 highest-rated books that have received more than 1,000 ratings?
@@ -73,11 +73,11 @@ ORDER BY
 LIMIT 10;
 ```
 
-## Output
+### Output
 ![Query 2 Result](query2_result.png)
 
 
-## Query 3: Most Prolific Authors
+### Query 3: Most Prolific Authors
 
 **Question:**  
 Which authors have written the most books in the dataset?
@@ -101,7 +101,7 @@ LIMIT 10;
 
 
 
-## Query 4: Average Number of Pages
+### Query 4: Average Number of Pages
 
 **Question:**
 What is the average number of pages for books in the dataset?
@@ -117,7 +117,7 @@ FROM
   books;
 ```
 
-## Query 5: Highest-Rated Authors (With at Least 5 Books)
+### Query 5: Highest-Rated Authors (With at Least 5 Books)
 
 **Question:**
 Which authors have published at least 5 books, and what is their average rating?
@@ -142,7 +142,7 @@ ORDER BY
 LIMIT 10;
 ```
 
-## Query 6: Find All Harry Potter Books
+### Query 6: Find All Harry Potter Books
 
 **Question:**
 Which books in the dataset are part of the Harry Potter series?
@@ -166,7 +166,7 @@ ORDER BY
 ```
 
 
-## How to Use
+### How to Use
 
 1. Download `books.db`
 2. Open it in [DB Browser for SQLite](https://sqlitebrowser.org/)
