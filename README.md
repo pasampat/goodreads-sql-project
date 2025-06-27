@@ -30,7 +30,7 @@ Who are the top 10 most popular authors by total number of ratings received?
 This query adds up the `ratings_count` for each author to measure overall popularity based on reader engagement.
 
 **SQL:**
-```sql
+```sql 
 SELECT 
   authors, 
   SUM(ratings_count) AS total_ratings
@@ -41,6 +41,8 @@ GROUP BY
 ORDER BY 
   total_ratings DESC
 LIMIT 10;
+```
+
 
 ## Output
 ![Query 1 Result](query1_result.png)
@@ -69,6 +71,7 @@ WHERE
 ORDER BY 
   average_rating DESC
 LIMIT 10;
+```
 
 ## Output
 ![Query 2 Result](query2_result.png)
@@ -93,7 +96,9 @@ GROUP BY
   authors
 ORDER BY 
   num_books DESC
-LIMIT 10;
+LIMIT 10; 
+```
+
 
 
 ## Query 4: Average Number of Pages
@@ -105,11 +110,12 @@ What is the average number of pages for books in the dataset?
 This query calculates the average length of books using the num_pages column. It gives a general sense of how long the books are on average in this dataset.
 
 **SQL:**
+```sql
 SELECT 
   AVG(num_pages) AS average_page_count
 FROM 
   books;
-
+```
 
 ## Query 5: Highest-Rated Authors (With at Least 5 Books)
 
@@ -120,6 +126,7 @@ Which authors have published at least 5 books, and what is their average rating?
 This query identifies authors with five or more books in the dataset and ranks them by their average rating. It uses GROUP BY to aggregate ratings per author and HAVING to filter for those with at least 5 books — a clause not usable with WHERE.
 
 **SQL:**
+```sql
 SELECT 
   authors, 
   COUNT(*) AS num_books,
@@ -133,7 +140,7 @@ HAVING
 ORDER BY 
   avg_rating DESC
 LIMIT 10;
-
+```
 
 ## Query 6: Find All Harry Potter Books
 
@@ -144,6 +151,7 @@ Which books in the dataset are part of the Harry Potter series?
 This query searches for all books whose titles contain the phrase “Harry Potter” using the LIKE operator with wildcard symbols (%). It helps demonstrate how to perform flexible text searches in SQL.
 
 **SQL:**
+```sql
 SELECT 
   title, 
   authors, 
@@ -155,7 +163,7 @@ WHERE
   title LIKE '%Harry Potter%'
 ORDER BY 
   average_rating DESC;
-
+```
 
 
 ## How to Use
