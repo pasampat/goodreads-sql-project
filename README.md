@@ -11,7 +11,7 @@ SQLite (via DB Browser), Goodreads dataset (Kaggle), Windows, Markdown
 SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY, LIMIT, LIKE,
 Aggregate functions: COUNT(), SUM(), AVG()
 
-###Questions
+### Questions
 1. **Who are the top 10 most popular authors by total number of ratings received?**  
 2. **What are the top 10 highest-rated books that have received more than 1,000 ratings?**  
 3. **Which authors have written the most books in the dataset?**  
